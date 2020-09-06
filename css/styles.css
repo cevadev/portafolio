@@ -20,4 +20,20 @@ h1, h2, h3, h4, h5, h6{
 h1{
     font-size: 4rem;
     line-height: 4.5rem;
+    font-weight: normal;
+    letter-spacing: -.2rem;
+    /* text-transform: uppercase;
+    text-decoration: underline; */
+}
+
+.hero{
+    height: 30rem;
+}
+
+.project-details{
+    width: 50rem;
+}
+
+.project-imageContainer{
+    width: 50rem;
 }
