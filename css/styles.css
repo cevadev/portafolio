@@ -1,8 +1,14 @@
-*{
+/* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
+} */
+
+/* gris oscuro = #1d252c 
+** gris claro = #626262
+** background gris = #1b2127 
+** celeste = #026fff
+*/
 
 html{
     font-size: 62.5%;
@@ -11,6 +17,7 @@ html{
 body{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.5rem;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -18,16 +25,67 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1{
+    margin: 0;
     font-size: 4rem;
     line-height: 4.5rem;
     font-weight: normal;
     letter-spacing: -.2rem;
+    color: white;
     /* text-transform: uppercase;
     text-decoration: underline; */
 }
 
+h1 strong{
+    color: #026fff;
+}
+
+.header{
+    background-color: #1b2127;
+    color: white;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
 .hero{
     height: 30rem;
+    background-image: url('../images/hero.jpg');
+    background-color: #1b2127;
+    /* width - height */
+    background-size: 50rem 30rem;
+    /*evitamos que la imagen se repita*/
+    background-repeat: no-repeat;
+    /*movemos a la derecha la imagen de fondo*/
+    background-position-x: right;
+}
+
+.portfolio{
+    background-color: #fafafa;
+    
+}
+
+.project{
+    background-color: white;
+    border: 0.1rem solid gray;
+    border-radius: 1rem;
+    margin: 1rem;
+    margin-bottom: 1.5rem;
+
+    /*aplicamos un padding - relleno de 5rem del padre con respecto del hijo*/
+    padding: 2rem;
+
+    /*BORDES SUS PROPIEDADES: WIDTH, STYLE, COLOR*/
+    /* border-top: 1rem solid red;
+    border-right: 1rem solid red;
+    border-bottom: 1rem solid red;
+    border-left: 1rem solid red; */
+
+    /*Otra forma de especificar un borde pero mas detallado*/
+    /* border-top-width: 1rem;
+    border-top-color: red;
+    border-top-style: solid; */
 }
 
 .project-details{
@@ -37,3 +95,4 @@ h1{
 .project-imageContainer{
     width: 50rem;
 }
+
