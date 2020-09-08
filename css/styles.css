@@ -52,7 +52,9 @@ figure{
 .header{
     background-color: #1b2127;
     color: white;
+    height: 70px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     height: 9rem;
 }
@@ -89,6 +91,8 @@ figure{
     background-repeat: no-repeat;
     /*movemos a la derecha la imagen de fondo*/
     background-position-x: right;
+    display: flex;
+    align-items: center;
 }
 
 .portfolio{
@@ -126,3 +130,18 @@ figure{
     width: 50rem;
 }
 
+.footer{
+    display: flex;
+    color: white;
+    background-color: #1b2127;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer img{
+    vertical-align: middle;
+}
+
+.footer a{
+    color: white;
+}
