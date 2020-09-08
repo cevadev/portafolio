@@ -39,6 +39,15 @@ h1 strong{
     color: #026fff;
 }
 
+h2{
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+}
+
 ol, ul{
     margin: 0;
     padding: 0;
@@ -52,7 +61,7 @@ figure{
 .header{
     background-color: #1b2127;
     color: white;
-    height: 70px;
+    height: 7rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -97,6 +106,7 @@ figure{
 
 .portfolio{
     background-color: #fafafa;
+    padding: 2rem;
     
 }
 
@@ -106,9 +116,12 @@ figure{
     border-radius: 1rem;
     margin: 1rem;
     margin-bottom: 1.5rem;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     /*aplicamos un padding - relleno de 5rem del padre con respecto del hijo*/
     padding: 2rem;
+
 
     /*BORDES SUS PROPIEDADES: WIDTH, STYLE, COLOR*/
     /* border-top: 1rem solid red;
@@ -122,8 +135,30 @@ figure{
     border-top-style: solid; */
 }
 
+.project strong{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+/* .project-date{
+    margin: 1rem 0;
+}
+ */
 .project-details{
     width: 50rem;
+}
+
+.project-title{
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.project-course, .project-date, .project-url{
+    margin: 1rem 0;
+}
+
+.project-description{
+    font-size: 2rem;
 }
 
 .project-imageContainer{
@@ -144,4 +179,50 @@ figure{
 
 .footer a{
     color: white;
+}
+
+.event-list{
+    display: flex;
+    /* align-items: center;
+    justify-content: space-between; */
+}
+
+.event-list-title{
+    margin-left: 2rem;
+}
+
+
+.event{
+    margin: 1rem;
+    width: 48rem;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: #f4fbff;
+}
+
+.event img{
+    width: 48rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.event-detail{
+    margin: 2rem 4rem;
+    background-color: white;
+    position: relative;
+    margin-top: -4rem;
+    text-align: center;
+}
+
+.event-description{
+    text-align: left;
+}
+
+.event-url{
+    border: 0.1rem solid #056fff;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    color: #056fff;
+    border-radius: 0.5rem;
 }
