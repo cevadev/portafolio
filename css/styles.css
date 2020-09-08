@@ -68,6 +68,17 @@ figure{
     height: 9rem;
 }
 
+.container{
+    border: 0.1rem solid red;
+    width: 100rem;
+    margin: 0 auto;
+    height: inherit;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    flex-wrap: inherit;
+}
+
 .menu { /* .menu hereda de .header */
   height: inherit;
 }
@@ -92,16 +103,21 @@ figure{
 
 .hero{
     height: 30rem;
-    background-image: url('../images/hero.jpg');
+    /* background-image: url('../images/hero.jpg'); */
     background-color: #1b2127;
     /* width - height */
-    background-size: 50rem 30rem;
+    /* background-size: 50rem 30rem; */
     /*evitamos que la imagen se repita*/
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     /*movemos a la derecha la imagen de fondo*/
-    background-position-x: right;
+    /* background-position-x: right; */
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.hero-image{
+    object-fit: cover;
 }
 
 .portfolio{
@@ -183,6 +199,7 @@ figure{
 
 .event-list{
     display: flex;
+    flex-wrap: wrap;
     /* align-items: center;
     justify-content: space-between; */
 }
@@ -225,4 +242,68 @@ figure{
     text-decoration: none;
     color: #056fff;
     border-radius: 0.5rem;
+}
+
+.contact{
+    background-color: #056fff;
+    color: white;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social{
+    /*border: 1px solid red;*/
+}
+
+.social-link{
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    margin: 0 1rem;
+    /*border: 1px solid white; -> valores para depurar el css*/
+    background-size: 5rem 5rem;
+}
+
+.social-link.twitter{
+    background-image: url(../images/twitter.svg);
+}
+
+.social-link.facebook{
+    background-image: url(../images/facebook.svg);
+}
+
+.social-link.github{
+    background-image: url(../images/github.svg);
+}
+
+.social-link.instagram{
+    background-image: url(../images/instagram.svg);
+}
+
+.form-email input{
+    border: gray;
+    border-radius: 0.5rem;
+    border-style: solid;
+    padding: 1rem 2rem 1rem 2.5rem;
+    background-image: url(../images/envelope.svg);
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 0.5rem;
+}
+
+.form-email button{
+    display: block;
+    background: transparent;
+    color: white;
+    padding: 0.5rem 0rem;
+    width: 10rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+.form-email h3{
+    font-family: 'Source Sans Pro', sans-serif;
 }
